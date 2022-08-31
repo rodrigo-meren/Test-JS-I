@@ -72,8 +72,8 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código: 
-  'Jose','pedro'; return false;
-  'Jose','Jose'; return true;
+  if (str1.length===str2.length) return true
+   else return false;
 }
  
 function menosQueNoventa(num) {
@@ -168,15 +168,15 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  agregarSimboloExclamacion('Hello kitty');
-  return 'Hello kitty!'
+  
+  return str + '!';
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Cristian" -> "Soy Cristian"
   // Tu código:
- return (Cristian ,Deluagano )
+ return nombre + ' '+ apellido;
 }
 
 function obtenerSaludo(nombre) {
@@ -184,7 +184,7 @@ function obtenerSaludo(nombre) {
   // "Nahuel" -> "Hola Nahuel!"
   // Tu código:
 
- return ('Hola'+'Nahuel!')
+ return 'Hola ' + nombre + '!';
 
 }
 
